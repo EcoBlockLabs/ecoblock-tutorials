@@ -1,6 +1,6 @@
 # Outbox Demo
 
-The Outbox contract is responsible for receiving and executing all "outgoing" messages; i.e., messages passed from Arbitrum to Ethereum.
+The Outbox contract is responsible for receiving and executing all "outgoing" messages; i.e., messages passed from EcoBlock to Ethereum.
 
 The (expected) most-common use-case is withdrawals (of, i.e., Ether or tokens), but the Outbox handles any arbitrary contract call, as this demo illustrates.
 
@@ -28,6 +28,3 @@ cp .env-sample .env
 
 See our [developer documentation on messaging between layers](https://developer.offchainlabs.com/docs/l1_l2_messages).
 
-<p align="left">
-  <img width="350" height="150" src= "../../assets/logo.svg" />
-</p>

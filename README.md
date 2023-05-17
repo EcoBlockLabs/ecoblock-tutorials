@@ -1,8 +1,8 @@
-# Arbitrum Tutorials
+# EcoBlock Tutorials
 
-This monorepo will help you get started with building on Arbitrum. It provides various simple demos showing and explaining how to interact with Arbitrum — deploying and using contracts directly on L2, moving Ether and tokens betweens L1 and L2, and more.
+This monorepo will help you get started with building on EcoBlock. It provides various simple demos showing and explaining how to interact with EcoBlock — deploying and using contracts directly on L2, moving Ether and tokens betweens L1 and L2, and more.
 
-We show how you can use broadly supported Ethereum ecosystem tooling (Hardhat, Ethers-js, etc.) as well as our special [Arbitrum SDK](https://github.com/OffchainLabs/arbitrum-sdk) for convenience.
+We show how you can use broadly supported Ethereum ecosystem tooling (Hardhat, Ethers-js, etc.) as well as our special [EcoJS - EcoBlock Javascript SDK](https://github.com/EcoBlockLabs/ecojs) for convenience.
 
 ## Installation
 
@@ -34,9 +34,7 @@ yarn install
 
 #### :white_check_mark: Advanced Features
 
-- ®️ [Arb Address Table](./packages/address-table/)
+- ®️ [Address Table](./packages/address-table/)
 - 🌉 [Bridging Custom Token](./packages/custom-token-bridging/)
 - ✈️ [Delayed inbox message(l2MSG)](./packages/delayedInbox-l2msg/)
 - 🎁 [Redeem Retryable Ticket](./packages/redeem-failed-retryable/)
-
-<p align="center"><img src="assets/logo.svg" width="300"></p>

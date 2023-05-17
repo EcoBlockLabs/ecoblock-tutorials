@@ -4,12 +4,12 @@ const ethers = require('ethers')
 const { hexDataLength } = require('@ethersproject/bytes')
 const {
   L1ToL2MessageGasEstimator,
-} = require('@arbitrum/sdk/dist/lib/message/L1ToL2MessageGasEstimator')
+} = require('@ecoblocklabs/ecojs/dist/lib/message/L1ToL2MessageGasEstimator')
 const {
   EthBridger,
   getL2Network,
   addDefaultLocalNetwork,
-} = require('@arbitrum/sdk')
+} = require('@ecoblocklabs/ecojs')
 const { arbLog, requireEnvVariables } = require('arb-shared-dependencies')
 requireEnvVariables(['DEVNET_PRIVKEY', 'L2RPC', 'L1RPC'])
 
@@ -34,7 +34,7 @@ const main = async () => {
   addDefaultLocalNetwork()
 
   /**
-   * Use l2Network to create an Arbitrum SDK EthBridger instance
+   * Use l2Network to create an EcoJs EthBridger instance
    * We'll use EthBridger to retrieve the Inbox address
    */
 

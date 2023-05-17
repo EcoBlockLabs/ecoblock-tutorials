@@ -1,8 +1,8 @@
 
-import { NodeInterface__factory } from "@arbitrum/sdk/dist/lib/abi/factories/NodeInterface__factory"
-import { SequencerInbox__factory } from "@arbitrum/sdk/dist/lib/abi/factories/SequencerInbox__factory"
-import { NODE_INTERFACE_ADDRESS } from "@arbitrum/sdk/dist/lib/dataEntities/constants"
-import { getL2Network, addDefaultLocalNetwork } from "@arbitrum/sdk"
+import { NodeInterface__factory } from "@ecoblocklabs/ecojs/dist/lib/abi/factories/NodeInterface__factory"
+import { SequencerInbox__factory } from "@ecoblocklabs/ecojs/dist/lib/abi/factories/SequencerInbox__factory"
+import { NODE_INTERFACE_ADDRESS } from "@ecoblocklabs/ecojs/dist/lib/dataEntities/constants"
+import { getL2Network, addDefaultLocalNetwork } from "@ecoblocklabs/ecojs"
 import { providers, BigNumber } from "ethers";
 
  /**

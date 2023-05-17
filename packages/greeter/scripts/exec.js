@@ -4,7 +4,7 @@ const hre = require('hardhat')
 const ethers = require('ethers')
 const {
   L1ToL2MessageGasEstimator,
-} = require('@arbitrum/sdk/dist/lib/message/L1ToL2MessageGasEstimator')
+} = require('@ecoblocklabs/ecojs/dist/lib/message/L1ToL2MessageGasEstimator')
 const { arbLog, requireEnvVariables } = require('arb-shared-dependencies')
 const {
   L1TransactionReceipt,
@@ -12,8 +12,8 @@ const {
   EthBridger,
   getL2Network,
   addDefaultLocalNetwork,
-} = require('@arbitrum/sdk')
-const { getBaseFee } = require('@arbitrum/sdk/dist/lib/utils/lib')
+} = require('@ecoblocklabs/ecojs')
+const { getBaseFee } = require('@ecoblocklabs/ecojs/dist/lib/utils/lib')
 requireEnvVariables(['DEVNET_PRIVKEY', 'L2RPC', 'L1RPC'])
 
 /**
@@ -37,7 +37,7 @@ const main = async () => {
   addDefaultLocalNetwork()
 
   /**
-   * Use l2Network to create an Arbitrum SDK EthBridger instance
+   * Use l2Network to create an EcoJs EthBridger instance
    * We'll use EthBridger to retrieve the Inbox address
    */
 
@@ -94,7 +94,7 @@ const main = async () => {
   const newGreeting = 'Greeting from far, far away'
 
   /**
-   * Now we can query the required gas params using the estimateAll method in Arbitrum SDK
+   * Now we can query the required gas params using the estimateAll method in EcoJs
    */
   const l1ToL2MessageGasEstimate = new L1ToL2MessageGasEstimator(l2Provider)
 

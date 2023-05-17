@@ -3,7 +3,7 @@ const {
   addDefaultLocalNetwork,
   L1TransactionReceipt,
   L1ToL2MessageStatus,
-} = require('@arbitrum/sdk')
+} = require('@ecoblocklabs/ecojs')
 const { arbLog, requireEnvVariables } = require('arb-shared-dependencies')
 require('dotenv').config()
 requireEnvVariables(['DEVNET_PRIVKEY', 'L2RPC', 'L1RPC'])
@@ -58,7 +58,7 @@ module.exports = async txnHash => {
 
   console.log(`Redeeming the ticket now 🥳`)
   /**
-   * We use the redeem() method from Arbitrum SDK to manually redeem our ticket
+   * We use the redeem() method from EcoJs to manually redeem our ticket
    */
   const l2Tx = await message.redeem()
   const rec = await l2Tx.waitForRedeem()

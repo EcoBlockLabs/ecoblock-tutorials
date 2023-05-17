@@ -1,12 +1,12 @@
 # token-withdraw Tutorial
 
-`token-withdraw` shows how to move ERC20 tokens from Arbitrum (Layer 2) into Ethereum (Layer 1).
+`token-withdraw` shows how to move ERC20 tokens from EcoBlock (Layer 2) into Ethereum (Layer 1).
 
 Note that this repo covers initiating a token withdrawal; for a demo on (later) releasing the funds from the Outbox, see [outbox-execute](../outbox-execute/README.md)
 
 ## How it works (Under the hood)
 
-To withdraw a token from Arbitrum, a message is send from a Gateway contract which burns the token on L2, and sends a message to L1, which allow the token to be released from escrow once the dispute period is expired. For more info, see [Outgoing messages documentation](https://developer.offchainlabs.com/docs/l1_l2_messages#l2-to-l1-messages-lifecycle).
+To withdraw a token from EcoBlock, a message is send from a Gateway contract which burns the token on L2, and sends a message to L1, which allow the token to be released from escrow once the dispute period is expired. For more info, see [Outgoing messages documentation](https://developer.offchainlabs.com/docs/l1_l2_messages#l2-to-l1-messages-lifecycle).
 
 ---
 
@@ -14,7 +14,7 @@ To withdraw a token from Arbitrum, a message is send from a Gateway contract whi
 
 In this demo, we deploy a fresh token and then deposit some to L2. Then, we use these new tokens to trigger a withdrawal back to L1.
 
-We use our [Arbitrum SDK](https://github.com/OffchainLabs/arbitrum-sdk) library for the token bridge interactions.
+We use our [EcoJS](https://github.com/EcoBlockLabs/ecojs) library for the token bridge interactions.
 
 See [./exec.js](./scripts/exec.js) for inline explanation.
 
@@ -34,6 +34,4 @@ cp .env-sample .env
 yarn withdraw-token
 ```
 
-<p align="left">
-  <img width="350" height="150" src= "../../assets/logo.svg" />
-</p>
+

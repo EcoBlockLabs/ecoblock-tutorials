@@ -1,8 +1,8 @@
 import { utils, providers } from "ethers";
-import { addDefaultLocalNetwork } from "@arbitrum/sdk";
-import { ArbGasInfo__factory } from "@arbitrum/sdk/dist/lib/abi/factories/ArbGasInfo__factory";
-import { NodeInterface__factory } from "@arbitrum/sdk/dist/lib/abi/factories/NodeInterface__factory";
-import { ARB_GAS_INFO, NODE_INTERFACE_ADDRESS } from "@arbitrum/sdk/dist/lib/dataEntities/constants";
+import { addDefaultLocalNetwork } from "@ecoblocklabs/ecojs";
+import { ArbGasInfo__factory } from "@ecoblocklabs/ecojs/dist/lib/abi/factories/ArbGasInfo__factory";
+import { NodeInterface__factory } from "@ecoblocklabs/ecojs/dist/lib/abi/factories/NodeInterface__factory";
+import { ARB_GAS_INFO, NODE_INTERFACE_ADDRESS } from "@ecoblocklabs/ecojs/dist/lib/dataEntities/constants";
 const { requireEnvVariables } = require('arb-shared-dependencies');
 
 // Importing configuration //

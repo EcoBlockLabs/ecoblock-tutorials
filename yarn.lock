@@ -11,26 +11,6 @@
     "@openzeppelin/contracts-upgradeable" "4.5.2"
     hardhat "^2.6.6"
 
-"@arbitrum/sdk@^v3.1.2":
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/@arbitrum/sdk/-/sdk-3.1.2.tgz#c1ded298778c141b6d8d0342a507a4f94af02757"
-  integrity sha512-QcS5t6GDCLyY+u0WaYPIjBd2U9hmDbzGc8gLMyiUxpP7w4bOWs6ZGBGUw2N6oLOMLI5IEq9ZbRZEC/Ejsy/URg==
-  dependencies:
-    "@ethersproject/address" "^5.0.8"
-    "@ethersproject/bignumber" "^5.1.1"
-    "@ethersproject/bytes" "^5.0.8"
-    ethers "^5.1.0"
-
-"@arbitrum/sdk@^v3.1.0":
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/@arbitrum/sdk/-/sdk-3.1.1.tgz#f1cd96351dcae138ec8a6359926c1b1a81989463"
-  integrity sha512-nM97/qPIqJCa6xisZEiyWNKzhgBjlTeHeURu/yDF2r8OXfTV9oqfFlE3BtkcTZYzZXOlJsngMcISwRMXIKXbvQ==
-  dependencies:
-    "@ethersproject/address" "^5.0.8"
-    "@ethersproject/bignumber" "^5.1.1"
-    "@ethersproject/bytes" "^5.0.8"
-    ethers "^5.1.0"
-
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
@@ -58,6 +38,16 @@
   integrity sha512-IchNf6dN4tHoMFIn/7OE8LWZ19Y6q/67Bmf6vnGREv8RSbBVb9LPJxEcnwrcwX6ixSvaiGoomAUvu4YSxXrVgw==
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
+
+"@ecoblocklabs/ecojs@^v1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@ecoblocklabs/ecojs/-/ecojs-1.0.0.tgz#be1836fbe2722c05442d1008f133a651b21cef01"
+  integrity sha512-aALzdUa8AizuP2uxhOFevg+oq99rsnW/PP21LlvtgPTovgWCLA7g1RygpuE509Q4jeuX0LT7v5wBL6elh9P7og==
+  dependencies:
+    "@ethersproject/address" "^5.0.8"
+    "@ethersproject/bignumber" "^5.1.1"
+    "@ethersproject/bytes" "^5.0.8"
+    ethers "^5.1.0"
 
 "@ensdomains/ens@^0.4.4":
   version "0.4.5"

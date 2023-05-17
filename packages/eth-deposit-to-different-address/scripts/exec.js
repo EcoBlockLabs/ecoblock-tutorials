@@ -4,7 +4,7 @@ const {
   getL2Network,
   EthDepositStatus,
   addDefaultLocalNetwork,
-} = require('@arbitrum/sdk')
+} = require('@ecoblocklabs/ecojs')
 const { parseEther } = utils
 const { arbLog, requireEnvVariables } = require('arb-shared-dependencies')
 require('dotenv').config()
@@ -27,7 +27,7 @@ const destAddress = '0x2D98cBc6f944c4bD36EdfE9f98cd7CB57faEC8d6'
 const ethToL2DepositAmount = parseEther('0.0001')
 
 const main = async () => {
-  await arbLog('Deposit Eth via Arbitrum SDK on a different address')
+  await arbLog('Deposit Eth via EcoJs on a different address')
 
   /**
    * Add the default local network configuration to the SDK
@@ -36,7 +36,7 @@ const main = async () => {
   addDefaultLocalNetwork()
 
   /**
-   * Use l2Network to create an Arbitrum SDK EthBridger instance
+   * Use l2Network to create an EcoJs EthBridger instance
    * We'll use EthBridger for its convenience methods around transferring ETH to L2
    */
   const l2Network = await getL2Network(l2Provider)

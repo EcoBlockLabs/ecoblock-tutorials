@@ -1,6 +1,6 @@
 # L1 Confirmation Checker Tutorial
 
-`l1 confirmation checker` is a simple demo of Arbitrum's transaction finality checker (used to check if transaction submitted to l1 or not).
+`l1 confirmation checker` is a simple demo of EcoBlock's transaction finality checker (used to check if transaction submitted to l1 or not).
 
 It calls precompile `NodeInterface` to find information about an L1 transaction that posted the L2 transaction in a batch.
 
@@ -32,6 +32,4 @@ cp .env-sample .env
 
 (you'll still need to edit some variables, i.e., `DEVNET_PRIVKEY`)
 
-<p align="left">
-  <img width="350" height="150" src= "../../assets/logo.svg" />
-</p>
+

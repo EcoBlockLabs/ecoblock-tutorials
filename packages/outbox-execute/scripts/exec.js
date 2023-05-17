@@ -3,7 +3,7 @@ const {
   addDefaultLocalNetwork,
   L2TransactionReceipt,
   L2ToL1MessageStatus,
-} = require('@arbitrum/sdk')
+} = require('@ecoblocklabs/ecojs')
 const { arbLog, requireEnvVariables } = require('arb-shared-dependencies')
 require('dotenv').config()
 requireEnvVariables(['DEVNET_PRIVKEY', 'L2RPC', 'L1RPC'])

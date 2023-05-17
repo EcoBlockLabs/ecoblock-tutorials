@@ -1,8 +1,8 @@
 const hre = require('hardhat')
 const {
   ArbAddressTable__factory,
-} = require('@arbitrum/sdk/dist/lib/abi/factories/ArbAddressTable__factory')
-const { addDefaultLocalNetwork } = require('@arbitrum/sdk')
+} = require('@ecoblocklabs/ecojs/dist/lib/abi/factories/ArbAddressTable__factory')
+const { addDefaultLocalNetwork } = require('@ecoblocklabs/ecojs')
 const { arbLog, requireEnvVariables } = require('arb-shared-dependencies')
 requireEnvVariables(['DEVNET_PRIVKEY', 'L2RPC'])
 require('dotenv').config()
@@ -17,20 +17,20 @@ async function main() {
   addDefaultLocalNetwork()
 
   /**
-   * Deploy ArbitrumVIP contract to L2
+   * Deploy EcoBlockVIP contract to L2
    */
-  const ArbitrumVIP = await hre.ethers.getContractFactory('ArbitrumVIP')
-  const arbitrumVIP = await ArbitrumVIP.deploy()
+  const EcoBlockVIP = await hre.ethers.getContractFactory('EcoBlockVIP')
+  const ecoBlockVIP = await EcoBlockVIP.deploy()
 
-  await arbitrumVIP.deployed()
+  await ecoBlockVIP.deployed()
 
-  console.log('ArbitrumVIP deployed to:', arbitrumVIP.address)
+  console.log('EcoBlockVIP deployed to:', ecoBlockVIP.address)
 
   const signers = await hre.ethers.getSigners()
   const myAddress = signers[0].address
 
   /**
-   * Connect to the Arbitrum Address table pre-compile contract
+   * Connect to the ArbAddress table pre-compile contract
    */
   const arbAddressTable = ArbAddressTable__factory.connect(
     '0x0000000000000000000000000000000000000066',
@@ -59,10 +59,10 @@ async function main() {
   const addressIndex = await arbAddressTable.lookup(myAddress)
 
   /**
-   * From here on out we can use this index instead of our address as a paramter into any contract with affordances to look up out address in the address data.
+   * From here on out we can use this index instead of our address as a parameter into any contract with affordances to look up out address in the address data.
    */
 
-  const txnRes = await arbitrumVIP.addVIPPoints(addressIndex)
+  const txnRes = await ecoBlockVIP.addVIPPoints(addressIndex)
   await txnRes.wait()
   /**
    * We got VIP points, and we minimized the calldata required, saving us precious gas. Yay rollups!

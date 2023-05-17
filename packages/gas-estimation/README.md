@@ -1,8 +1,8 @@
 # Gas estimation tutorial
 
-`gas-estimation` is a simple demo of how a developer can estimate transaction fees on Arbitrum.
+`gas-estimation` is a simple demo of how a developer can estimate transaction fees on EcoBlock.
 
-It uses the formula described in this Medium article to estimate the fees to be paid on a transaction, also estimating each component of the formula sepparately: [Understanding Arbitrum: 2-Dimensional Fees](https://medium.com/offchainlabs/understanding-arbitrum-2-dimensional-fees-fd1d582596c9).
+It uses the formula described in this Medium article to estimate the fees to be paid on a transaction, also estimating each component of the formula sepparately: [Understanding 2-Dimensional Fees](https://medium.com/offchainlabs/understanding-arbitrum-2-dimensional-fees-fd1d582596c9).
 
 See [./exec.ts](./scripts/exec.ts) for inline explanations.
 
@@ -24,6 +24,3 @@ cp .env-sample .env
 
 (you'll still need to edit some variables, i.e., `L2RPC`)
 
-<p align="left">
-  <img width="350" height="150" src= "../../assets/logo.svg" />
-</p>

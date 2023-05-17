@@ -5,7 +5,7 @@ const {
   getL2Network,
   Erc20Bridger,
   L1ToL2MessageStatus,
-} = require('@arbitrum/sdk')
+} = require('@ecoblocklabs/ecojs')
 const { arbLog, requireEnvVariables } = require('arb-shared-dependencies')
 const { expect } = require('chai')
 require('dotenv').config()
@@ -28,7 +28,7 @@ const l2Wallet = new Wallet(walletPrivateKey, l2Provider)
 const tokenDepositAmount = BigNumber.from(50)
 
 const main = async () => {
-  await arbLog('Deposit token using Arbitrum SDK')
+  await arbLog('Deposit token using EcoJs')
 
   /**
    * Add the default local network configuration to the SDK
@@ -37,7 +37,7 @@ const main = async () => {
   addDefaultLocalNetwork()
 
   /**
-   * Use l2Network to create an Arbitrum SDK Erc20Bridger instance
+   * Use l2Network to create an EcoJs Erc20Bridger instance
    * We'll use Erc20Bridger for its convenience methods around transferring token to L2
    */
   const l2Network = await getL2Network(l2Provider)

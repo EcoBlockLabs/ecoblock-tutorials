@@ -1,6 +1,6 @@
 # Address Table Demo
 
-The Address table is a precompiled contract on Arbitrum for registering addresses which are then retrievable by an integer index; this saves gas by minimizing precious calldata required to input an address as a parameter.
+The Address table is a precompiled contract on EcoBlock for registering addresses which are then retrievable by an integer index; this saves gas by minimizing precious calldata required to input an address as a parameter.
 
 This demo shows a simple contract with affordances to retrieve an address from a contract by its index in the address table, and a client-side script to pre-register the given address (if necessary).
 
@@ -9,7 +9,7 @@ See `exec.js` for inline comments / explanation.
 ### Run demo
 
 ```
- yarn run exec
+yarn run exec
 ```
 
 ## Config Environment Variables
@@ -26,6 +26,4 @@ cp .env-sample .env
 
 See our [developer documentation for more info](https://developer.offchainlabs.com/docs/special_features).
 
-<p align="left">
-  <img width="350" height="150" src= "../../assets/logo.svg" />
-</p>
+

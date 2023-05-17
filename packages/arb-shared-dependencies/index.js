@@ -22,7 +22,7 @@ const arbLog = async text => {
     console.log(str)
   }
 
-  console.log('Arbitrum Demo:', text)
+  console.log('EcoBlock Demo:', text)
   await wait(2000)
 
   console.log('Lets')

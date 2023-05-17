@@ -1,8 +1,8 @@
 {
-  "name": "arbitrum-tutorials",
+  "name": "ecoblock-tutorials",
   "version": "1.0.0",
-  "description": "The Arbitrum Tutorials Monorepo",
-  "author": "Offchain Labs, Inc.",
+  "description": "The EcoBlock Tutorials Monorepo",
+  "author": "EcoBlockLabs",
   "license": "Apache-2.0",
   "private": "true",
   "engines": {

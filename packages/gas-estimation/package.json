@@ -6,7 +6,7 @@
     "exec": "ts-node scripts/exec.ts"
   },
   "dependencies": {
-    "@arbitrum/sdk": "^v3.1.2",
+    "@ecoblocklabs/ecojs": "^v1.0.0",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.3"
   },

@@ -4,9 +4,9 @@ pragma solidity ^0.7.2;
 import "arbos-precompiles/arbos/builtin/ArbAddressTable.sol";
 import "hardhat/console.sol";
 
-contract ArbitrumVIP {
+contract EcoBlockVIP {
     string greeting;
-    mapping(address => uint256) arbitrumVIPPoints; // Maps address to vip points. More points you have, cooler you are.
+    mapping(address => uint256) eccoblockVIPPoints; // Maps address to vip points. More points you have, cooler you are.
 
     ArbAddressTable arbAddressTable;
 
@@ -19,6 +19,6 @@ contract ArbitrumVIP {
         // retreive address from address table
         address addressFromTable = arbAddressTable.lookupIndex(addressIndex);
 
-        arbitrumVIPPoints[addressFromTable]++;
+        eccoblockVIPPoints[addressFromTable]++;
     }
 }

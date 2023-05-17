@@ -1,6 +1,6 @@
 # demo-dapp-pet-shop Tutorial
 
-demo-dapp-pet-shop is a simple sample example that allows you to deploy the adoption contract to Arbitrum and run its functions.
+demo-dapp-pet-shop is a simple sample example that allows you to deploy the adoption contract to EcoBlock and run its functions.
 
 The contract lives entirely on L2 / involves no direct L1 interacts; writing, deploying, and interacting with it works just like using an L1 contract.
 
@@ -20,10 +20,7 @@ cp .env-sample .env
 yarn run exec
 ```
 
-## Curious to see the output on the Arbitrum chain?
+## Curious to see the output on the EcoBlock chain?
 
-Once the script is successfully executed, you can go to the [Arbitrum block explorer](https://goerli-rollup-explorer.arbitrum.io/), enter your L2 address, and see the corresponding transactions on the Arbitrum chain!
+Once the script is successfully executed, you can go to the [EcoBlock block explorer](https://testnet.ecoscan.io/), enter your L2 address, and see the corresponding transactions on the EcoBlock chain!
 
-<p align="left">
-  <img width="350" height="150" src= "../../assets/logo.svg" />
-</p>

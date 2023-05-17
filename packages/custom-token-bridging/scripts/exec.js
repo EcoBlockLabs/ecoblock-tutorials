@@ -4,11 +4,11 @@ const {
   getL2Network,
   addDefaultLocalNetwork,
   L1ToL2MessageStatus,
-} = require('@arbitrum/sdk')
+} = require('@ecoblocklabs/ecojs')
 const { arbLog, requireEnvVariables } = require('arb-shared-dependencies')
 const {
   AdminErc20Bridger,
-} = require('@arbitrum/sdk/dist/lib/assetBridger/erc20Bridger')
+} = require('@ecoblocklabs/ecojs/dist/lib/assetBridger/erc20Bridger')
 const { expect } = require('chai')
 require('dotenv').config()
 requireEnvVariables(['DEVNET_PRIVKEY', 'L1RPC', 'L2RPC'])
@@ -32,7 +32,7 @@ const premine = ethers.utils.parseEther('3')
 
 const main = async () => {
   await arbLog(
-    'Setting Up Your Token With The Generic Custom Gateway Using Arbitrum SDK Library'
+    'Setting Up Your Token With The Generic Custom Gateway Using EcoJs Library'
   )
 
   /**
@@ -42,7 +42,7 @@ const main = async () => {
   addDefaultLocalNetwork()
 
   /**
-   * Use l2Network to create an Arbitrum SDK AdminErc20Bridger instance
+   * Use l2Network to create an EcoJs AdminErc20Bridger instance
    * We'll use AdminErc20Bridger for its convenience methods around registering tokens to the custom gateway
    */
   const l2Network = await getL2Network(l2Provider)

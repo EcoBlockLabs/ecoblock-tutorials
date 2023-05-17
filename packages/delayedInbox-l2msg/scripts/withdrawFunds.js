@@ -3,15 +3,15 @@ const { arbLog, requireEnvVariables } = require('arb-shared-dependencies')
 const {
   getL2Network,
   addDefaultLocalNetwork,
-} = require('@arbitrum/sdk/dist/lib/dataEntities/networks')
-const { InboxTools } = require('@arbitrum/sdk')
+} = require('@ecoblocklabs/ecojs/dist/lib/dataEntities/networks')
+const { InboxTools } = require('@ecoblocklabs/ecojs')
 const {
   ArbSys__factory,
-} = require('@arbitrum/sdk/dist/lib/abi/factories/ArbSys__factory')
+} = require('@ecoblocklabs/ecojs/dist/lib/abi/factories/ArbSys__factory')
 
 const {
   ARB_SYS_ADDRESS,
-} = require('@arbitrum/sdk/dist/lib/dataEntities/constants')
+} = require('@ecoblocklabs/ecojs/dist/lib/dataEntities/constants')
 requireEnvVariables(['DEVNET_PRIVKEY', 'L2RPC', 'L1RPC'])
 
 /**
